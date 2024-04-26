@@ -2,7 +2,6 @@ from flask import Flask
 from config import Config
 from flask_smorest import Api
 from flask_migrate import Migrate
-# from flask_jwt_extended import JWTManager
 from flask_cors import CORS
 
 import models
@@ -22,11 +21,6 @@ def create_app(db_url=None):
 
   migrate = Migrate(app, db)
   api = Api(app)
-  # jwt = JWTManager(app)
-
-  # PRECISO?
-  # with app.app_context():
-  #   db.create_all()
 
   api.register_blueprint(TransactionBlueprint)
   api.register_blueprint(PointsBlueprint)
