@@ -1,0 +1,1 @@
+O projeto pode ser rodado separadamente, através do seu próprio `docker-compose.yml`, ou através do API Gateway. Para isso, seguir as instruções no repositório [desse projeto](https://github.com/danilogcastro/api-gateway)
